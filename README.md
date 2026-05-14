@@ -108,7 +108,7 @@ pip install -r requirements.txt
 - Dependências: [requirements.txt](requirements.txt)
 - Modelos (esperado): [models/](models/)
 
-## Em construção
+## 🛠️ Em construção
 - Visualização dos insights e predição para novas casas via Streamlit
 
 ## Licença
