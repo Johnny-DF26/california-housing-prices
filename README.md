@@ -2,6 +2,31 @@
 
 Um projeto de ciência de dados que analisa o conjunto de dados de habitação da Califórnia (censo de 1990) e entrega um modelo preditivo para estimar o valor mediano de casas por quarteirão.
 
+## Entendimento do Negócio
+###**📜Contexto Histórico**  
+Estamos em outubro de 1990. Você como cientista de dados foi contratado pela **Strategic California Land Partners (SCLP)**, uma firma de investimentos que busca capitalizar sobre a expansão urbana da Costa Oeste.O clima no escritório de San Francisco é tenso. O mercado imobiliário está mudando rápido demais e os métodos de avaliação tradicionais, baseados em "feeling" de corretores locais, estão falhando. A diretoria da SCLP tomou uma decisão radical: eles vão ignorar as opiniões dos especialistas e apostar tudo em modelagem ciência de dados.  
+
+###**O Conflito**  
+O Diretor de Aquisições, **Sr. Harrison**, entrega a você os dados contendo os registros do Censo de 1990. Ele é direto: "Nós temos bilhões de dólares em capital de investidores. Atualmente, levamos semanas para avaliar o potencial de um distrito habitacional. Se o valor mediano das casas em um bloco for maior do que os fundamentos sugerem, estamos comprando uma bolha. Se for menor, estamos perdendo uma mina de ouro. Eu preciso de uma análise e previsão dessas casas.
+
+###**🧹O Problema Técnico** (A "Sujeira" no Caminho)  
+Harrison sabe que os dados são traiçoeiros. Ele avisa que a equipe de campo foi negligente: Existem distritos onde ninguém sabe quantos quartos existem de fato, deixando buracos nos registros.Há uma suspeita de que os valores das casas mais luxuosas foram "mascarados" ou limitados nos relatórios do governo por questões burocráticas, o que pode enganar o seu cálculo.Os números de renda parecem estranhos, codificados de uma forma que só faz sentido para os burocratas do Censo. Sua tarefa é mergulhar nesses dados brutos e construir uma arquitetura de predição. Você deve ser capaz de receber as coordenadas de latitude e longitude, a idade das construções e o perfil econômico daquelas famílias e, como um oráculo, dizer exatamente: "Neste quarteirão, o valor mediano das casas deveria ser X dólares".  
+Se o seu modelo de regressão for preciso, a SCLP dominará o mercado imobiliário. Se você falhar e o modelo ignorar as nuances da proximidade com o oceano ou a densidade populacional, a firma enfrentará a falência por pagar caro demais em regiões desvalorizadas.
+
+###**💾 Conteúdo**  
+Os dados referem-se às casas encontradas em um determinado distrito da Califórnia e a algumas estatísticas resumidas sobre elas com base nos dados do censo de 1990. Atenção: os dados não estão limpos, portanto, algumas etapas de pré-processamento são necessárias! As colunas são as seguintes, e seus nomes são bastante autoexplicativos:
+
+* **longitude:** uma medida que indica a distância a oeste de uma casa; quanto maior o valor, mais a oeste ela fica
+* **latitude:** Uma medida que indica a latitude de uma casa; quanto maior o valor, mais ao norte ela fica
+* **housing_median_age:** Idade média das casas de um quarteirão; um número mais baixo indica que se trata de um prédio mais novo
+* **total_rooms:** Número total de quartos em um bloco
+* **total_bedrooms:** Número total de quartos em um prédio
+* **population:** Número total de pessoas que residem em um quarteirão
+* **households:** Número total de famílias, ou seja, grupos de pessoas que residem em uma unidade habitacional, para um quarteirão
+* **median_income:** Renda média das famílias em um quarteirão (medida em dezenas de milhares de dólares americanos)
+* **median_house_value:** Valor mediano das casas para as famílias de um quarteirão (medido em dólares americanos)
+* **ocean_proximity:** Localização da casa em relação ao oceano/mar
+
 ## Sumário
 - **Objetivo:** prever `median_house_value` (valor mediano das casas) por quarteirão e entregar um modelo robusto para suporte a decisões de investimento.
 - **Dados principais:** `data/housing.csv` (versão original) e `data.csv` (versões processadas/derivadas).
