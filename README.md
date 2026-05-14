@@ -83,18 +83,6 @@ pip install -r requirements.txt
 - Dependências: [requirements.txt](requirements.txt)
 - Modelos (esperado): [models/](models/)
 
-## Como usar em produção (observações rápidas)
-
-- Re-treinar o modelo final (`XGBoost` otimizado) com os dados completos antes de produção (conforme célula "Treino com os dados totais e salvamento do modelo para produção").
-- Versionar modelos (ex.: `models/xgboost_v1.joblib`) e manter metadados (dados de treino, data, score) para auditoria.
-- Implementar testes de monitoramento (drift de distribuição, queda de performance) e política de re-treinamento.
-
-## Próximos passos sugeridos
-
-- Aumentar amostragem para categorias raras (ex.: `ISLAND`) antes de usar esses sinais para decisões críticas.
-- Testar pipelines com features geoespaciais adicionais (distância ao centro urbano, distância ao mar em metros).
-- Implementar um endpoint simples (FastAPI/Flask) para servir previsões e um script de avaliação automática.
-
 ## Licença
 
 Este repositório não possui licença explícita; adicione um arquivo LICENSE caso deseje especificar os termos de uso.
