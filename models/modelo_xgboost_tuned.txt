@@ -1,0 +1,9 @@
+R²: 0.832
+MAE: $31,733.44
+MSE: $2,292,289,354.25
+Melhores parametros: {'colsample_bytree': 0.7, 'learning_rate': 0.0884, 'max_depth': 8, 'min_child_weight': 4, 'n_estimators': 107, 'subsample': 0.707}
+Colunas para o modelo: Index(['proximity_INLAND', 'proximity_ISLAND', 'proximity_NEAR BAY',
+       'proximity_NEAR OCEAN', 'longitude', 'latitude', 'housing_median_age',
+       'total_rooms', 'total_bedrooms', 'population', 'households',
+       'median_income', 'median_house_value'],
+      dtype='object')
