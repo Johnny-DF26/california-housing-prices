@@ -67,7 +67,10 @@ Abaixo está o comparativo de performance obtido entre os algoritmos testados:
 ├── notebooks/     <- Análise exploratória (EDA), pipelines de treino e tuning (.ipynb)
 ├── models/        <- Modelos treinados salvos em binário para produção
 ├── docs/          <- Documentação e relatórios executivos de insights
+├── streamlit(dashboard)/     <- Dashboard com as análises gráficas e predicões
+├── README/        <- Apresentação do projeto
 └── requirements.txt <- Arquivo de dependências para replicação do ambiente
+
 ```
 
 ---
