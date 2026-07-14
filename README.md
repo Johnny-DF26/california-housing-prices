@@ -94,11 +94,6 @@ Abra o arquivo `notebooks/California_Housing_Prices.ipynb` no seu editor ou Jupy
 
 ---
 
-## 🚧 Próximos Passos
-*   [ ] Desenvolvimento de uma interface web no **Streamlit** para permitir que investidores simulem coordenadas geográficas (latitude/longitude) e recebam o preço do imóvel em tempo real.
-
----
-
 ## 📬 Contato e Conexões
 *   **Desenvolvedor**: Johnny
 *   **LinkedIn**: [in/datasciencejohnny](https://linkedin.com)
